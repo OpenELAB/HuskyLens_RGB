@@ -84,8 +84,4 @@ void loop()
 4.  连接好Arduino和模块的线后，点击编译以及上传
   ![image](https://github.com/user-attachments/assets/048771d6-e1d4-47a1-b90c-5c3ed1168573)
 5. 打开串口查看当前距离数值
-实验现象
-
-当HC-04超声波模块检测到，距离小于25CM时将会开启蜂鸣器
-暂时无法在飞书文档外展示此内容
 
