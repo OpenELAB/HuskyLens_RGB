@@ -57,7 +57,7 @@ This project implements color recognition using HuskyLens. By learning, recogniz
 
 4、Firmware version differences: In firmware versions below V0.5.1, when multiple blocks of the same color appear, HuskyLens is unable to recognize the separated blocks at the same time, and can only recognize one block at a time.  
 5、Version V0.5.1 and above: In firmware version V0.5.1 and above, HuskyLens optimizes this feature to recognize multiple blocks of the same color at the same time and can be used for the color block counting function.  
-## 安装与操作
+## Installation and Operation
 1、Connect the HuskyLens to the Raspberry Pi via the I2C interface.  
 2、Follow the wiring diagram to connect the RGB LEDs to the PWM pins of the controller.  
 3、Open HuskyLens, set the function to “Color Recognition” and select “Learn Multiple” mode.  
