@@ -18,11 +18,8 @@ This project implements color recognition using HuskyLens. By learning, recogniz
 - 🔋 Low power consumption: low power consumption of the device, suitable for long time color recognition and tracking.
 ## Project structure
 ```
-│── README.md               # 项目说明文件
-│── ColorRecognition        # 源代码文件夹
-  │── main.py               # 主代码文件
-  │── RGBControl.py         # RGB控制代码
-  │── HuskyLens.py          # HuskyLens接口代码
+│── README.md               # Project description document
+│── HuskyLens_RGB.py        # source code folder
 ```
 ## Required materials
 1、HuskyLens Color Recognition Sensor  
