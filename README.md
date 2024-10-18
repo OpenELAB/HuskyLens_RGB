@@ -3,6 +3,7 @@
 - 📝 Project Description
 - ✨ Functional characteristics
 - 🏗  Project structure
+- Required materials
 - 🚀 Installation and Operation
 - 🔧 Instructions for use
 
