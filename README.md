@@ -39,6 +39,21 @@ This project implements color recognition using HuskyLens. By learning, recogniz
 - R (Red): connected to the PWM output pin of the controller.  
 - G (green): connected to the PWM output pin of the controller.
 - B (blue light): connected to the PWM output pin of the controller.
+## 操作步骤 - 学习多个颜色
+1、进入颜色识别模式：向左或向右拨动“功能按键”，直到屏幕顶部显示“颜色识别”。  
+2、进入参数设置：长按“功能按键”进入颜色识别功能的二级菜单。  
+3、选择学习多个颜色：向左或向右拨动“功能按键”，选中“学习多个”，然后短按“功能按键”。    
+- 向右拨动“功能按键”开启“学习多个”选项，此时进度条颜色变为蓝色，并且进度条上的方块移动到右侧。
+- 确认参数：再短按“功能按键”确认设置。
+
+4、保存并返回：向左拨动“功能按键”，选中“保存并返回”，短按“功能按键”。  
+- 屏幕会提示“是否保存参数？”，默认选择“确认”，短按“功能按键”保存参数并自动返回颜色识别模式。
+## 侦测与学习颜色
+1、侦测颜色：将HuskyLens屏幕中央的“+”字对准目标颜色块，屏幕上会出现一个白色方框，自动框选目标颜色块。调整HuskyLens与颜色块的角度和距离，使白色方框尽量框住整个目标色块。  
+2、学习颜色：侦测到颜色后，按下“学习按键”学习第一种颜色，然后松开“学习按键”结束学习，屏幕上会显示消息提示：“再按一次继续，按其他按键结束”。如果需要继续学习下一个颜色，可以在倒计时结束前按下“学习按键”，继续学习。HuskyLens显示的颜色ID会按顺序依次标注为“ID1”、“ID2”、“ID3”，不同颜色对应不同的方框颜色。  
+3、识别颜色：当HuskyLens遇到相同或相近的颜色时，屏幕上会显示彩色边框框选出色块，并显示该颜色的ID，边框大小会随色块的面积变化，并自动跟踪色块。多种颜色可以同时被识别和追踪，不同颜色对应不同颜色的边框。  
+4、固件版本差异：在V0.5.1版本以下的固件中，当多个相同颜色的色块出现时，HuskyLens无法同时识别相隔的色块，一次只能识别一个色块。  
+5、V0.5.1版本及以上：在V0.5.1及以上版本的固件中，HuskyLens优化了该功能，可以同时识别多个相同颜色的色块，并可用于色块计数功能。
 ## 安装与操作
 1、Connect the HuskyLens to the Raspberry Pi via the I2C interface.  
 2、Follow the wiring diagram to connect the RGB LEDs to the PWM pins of the controller.  
